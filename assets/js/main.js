@@ -1,4 +1,4 @@
-/* SHOW MENU */
+/*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById('nav-menu')
 const navToggle = document.getElementById('nav-toggle')
 const navClose = document.getElementById('nav-close')
@@ -19,7 +19,7 @@ if(navClose) {
     })
 }
 
-/* REMOVE MENU MOBILE */
+/*=============== REMOVE MENU MOBILE ===============*/
 const navLink = document.querySelectorAll('.nav__link')
 
 function linkAction() {
@@ -29,7 +29,7 @@ function linkAction() {
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-/* CHANGE BACKGROUND HEADER */
+/*=============== CHANGE BACKGROUND HEADER ===============*/
 function scrollHeader() {
     const header = document.getElementById('header')
     //When we scroll is greater than 50viewport height, add the scroll-header class to the header tag
@@ -38,17 +38,39 @@ function scrollHeader() {
 }
 
 window.addEventListener('scroll', scrollHeader)
+/*=============== POPULAR SWIPER ===============*/
+let swiperPopular = new Swiper(".popular__container", {
+  loop: true,
+  spaceBetween: 24,
+  slidesPerView: 'auto',
+  grabCursor: true,
 
-/* POPULAR SWIPER */
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: true,
+  },
+
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+    },
+    1024: {
+      spaceBetween: 48,
+    },
+  },
+});
+
+/*=============== MIXITUP FILTER FEATURED ===============*/
 
 
-/* MIXITUP FILTER FEATURED */
+/* Link active featured */ 
 
 
-/* Link active featured */
+/*=============== SHOW SCROLL UP ===============*/ 
 
 
-/* SHOW SCROLL UP */
+/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
 
-/*  */
+/*=============== SCROLL REVEAL ANIMATION ===============*/
+

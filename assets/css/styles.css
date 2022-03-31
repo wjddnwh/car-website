@@ -1,11 +1,11 @@
 /* GOOGLE FONTS */
 @import url("https://fonts.googleapis.com/css2?family=Exo:wght@400;500;600&display=swap");
 
-/* VARIABLES CSS */
+/*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3.5rem;
 
-  /* COLORS */
+  /*========== Colors ==========*/
   /* Color made HSL(hue, saturation, lightness) */
   --first-color: hsl(219, 69%, 56%);
   --first-color-alt: hsl(219, 69%, 52%);
@@ -16,7 +16,7 @@
   --body-color: hsl(219, 4%, 4%);
   --container-color: hsl(219, 4%, 7%);
 
-  /* Font and typography */
+  /*========== Font and typography ==========*/
   /* .5rem = 8px / 1rem = 16px ... */
   --body-font: "Exo", sans-serif;
   --h1-font-size: 1.5rem;
@@ -26,11 +26,11 @@
   --small-font-size: 0.813rem;
   --smaller-font-size: 0.75rem;
 
-  /* Font weight */
+  /*========== Font weight ==========*/
   --font-medium: 500;
   --font-semi-bold: 600;
 
-  /* z index */
+  /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
 }
@@ -47,7 +47,7 @@
   }
 }
 
-/* BASE */
+/*=============== BASE ===============*/
 * {
   box-sizing: border-box;
   padding: 0;
@@ -85,7 +85,7 @@ img {
   height: auto;
 }
 
-/* REUSABLE CSS CLASSES */
+/*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 1024px;
   margin-right: 1.5rem;
@@ -127,7 +127,13 @@ img {
   height: 300px;
 }
 
-/* HEADER & NAV */
+.shape__smaller {
+  width: 180px;
+  height: 180px;
+  filter: blur(64px);
+}
+
+/*=============== HEADER & NAV ===============*/
 .header {
   width: 100%;
   background-color: transparent;
@@ -226,7 +232,7 @@ img {
 
 /* Active link */
 
-/* HOME */
+/*=============== HOME ===============*/
 .home {
   position: relative;
   overflow: hidden;
@@ -357,7 +363,7 @@ img {
   }
 }
 
-/* BUTTON */
+/*=============== BUTTON ===============*/
 .button {
   display: inline-block;
   background-color: var(--first-color);
@@ -372,7 +378,7 @@ img {
   background-color: var(--first-color-alt);
 }
 
-/* ABOUT */
+/*=============== ABOUT ===============*/
 .about__container {
   row-gap: 6rem;
 }
@@ -416,10 +422,121 @@ img {
   margin-bottom: 2rem;
 }
 
-/* POPULAR */
+/*=============== POPULAR ===============*/
+.popular__container {
+  padding-top: 1rem;
+}
+
+.popular__card {
+  position: relative;
+  width: 238px;
+  background-color: var(--container-color);
+  padding: 2rem 1.5rem 1.5rem;
+  border-radius: 1rem;
+  margin-bottom: 3.5rem;
+  overflow: hidden;
+}
+
+.popular__card .shape__smaller {
+  position: absolute;
+  top: -2.5rem;
+  left: -2.5rem;
+}
+
+.popular__title,
+.popular__subtitle,
+.popular__img {
+  position: relative;
+}
+
+.popular__title {
+  font-size: var(--h2-font-size);
+  margin-bottom: 0.25rem;
+}
+
+.popular__subtitle {
+  font-size: var(--normal-font-size);
+  color: var(--text-color);
+  font-weight: 400;
+}
+
+.popular__img {
+  width: 160px;
+  margin: 0.75rem 0 1.25rem 1.5rem;
+  transition: 0.3s;
+}
+
+.popular__data {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 0.5rem 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.popular__data-group {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  font-size: var(--smaller-font-size);
+  color: var(--white-color);
+}
+
+.popular__data i {
+  font-size: 1rem;
+}
+
+.popular__price {
+  font-size: var(--h3-font-size);
+}
+
+.popular__button {
+  border: none;
+  outline: none;
+  padding: 0.75rem 1rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 1rem 0 1rem 0;
+  cursor: pointer;
+}
+
+.popular__button i {
+  font-size: 1.25rem;
+}
+
+.popular__card:hover .popular__img {
+  transform: translateY(-0.25rem);
+}
 
 /* Swiper class */
+.swiper-pagination-bullet {
+  background: var(--text-color);
+}
 
-/* FEATURES */
+.swiper-pagination-bullet-active {
+  background-color: var(--first-color);
+}
+/*=============== FEATURES ===============*/
 
-/* FEATURED */
+/*=============== FEATURED ===============*/
+
+/* Active link featured */
+
+/*=============== OFFER ===============*/
+
+/*=============== LOGOS ===============*/
+
+/*=============== FOOTER ===============*/
+
+/*=============== SCROLL BAR ===============*/
+
+/*=============== SCROLL UP ===============*/
+
+/* Show Scroll Up*/
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+
+/* For medium devices */
+
+/* For large devices */
