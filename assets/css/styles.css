@@ -48,11 +48,17 @@
 /* Active link featured */
 @import "response/active-featured.css";
 
-/*=============== SCROLL BAR ===============*/
+/* SCROLL BAR */
+@import "response/scroll-bar.css";
 
-/*=============== SCROLL UP ===============*/
+/* SCROLL UP */
+@import "response/scroll-up.css";
 
 /* Show Scroll Up*/
+@import "response/show-scroll-up.css";
+
+/* Active link */
+@import "response/active-link.css";
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
