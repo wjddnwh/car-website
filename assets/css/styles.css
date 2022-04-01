@@ -61,8 +61,4 @@
 @import "response/active-link.css";
 
 /*=============== BREAKPOINTS ===============*/
-/* For small devices */
-
-/* For medium devices */
-
-/* For large devices */
+@import "response/media-screen.css";
